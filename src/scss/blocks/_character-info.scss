@@ -1,0 +1,50 @@
+.character-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100dvh;
+    padding: 2em;
+}
+
+.character-info__wrapper {
+    flex-basis: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1em;
+    background-color: #fff;
+    border-radius: 3em;
+    padding: 1em;
+}
+
+.character-info__image {
+    > img {
+        border-radius: 3em;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        mask-image: linear-gradient(90deg, rgba(0, 0, 0, 1), transparent);
+    }
+}
+
+.character-info__attributes {
+    align-self: center;
+    justify-self: start;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.8em;
+    height: 100%;
+    width: 100%;
+
+    h4 {
+        font-style: normal;
+        font-weight: 900;
+    }
+
+    p {
+        flex: 1;
+        font-style: italic;
+    }
+}

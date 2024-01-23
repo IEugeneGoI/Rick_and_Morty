@@ -1,0 +1,23 @@
+.character-card {
+    padding: 2em 1em;
+    background-color: #fff;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+.character-card__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+
+    > p {
+        font-weight: bold;
+    }
+
+    > img {
+        margin-top: -4em;
+        border-radius: 1em;
+        box-shadow: 0em 1em 1em 0em rgbf(0, 0, 0, 0.2);
+    }
+}

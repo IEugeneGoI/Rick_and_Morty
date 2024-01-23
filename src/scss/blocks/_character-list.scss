@@ -1,0 +1,7 @@
+.character-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    column-gap: 2em;
+    row-gap: 5em;
+    padding: 4em 0;
+}
